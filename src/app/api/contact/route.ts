@@ -52,7 +52,7 @@ export async function POST(request: Request) {
     // For testing, onboarding@resend.dev works but only sends to the email associated with the Resend account.
     const { data, error } = await resend.emails.send({
       from: 'Nikky Bawa Website <onboarding@resend.dev>', // Update this when you have a verified domain
-      to: ['mkbagaria13@gmail.com'], // Primary salon email
+      to: ['yhpadwords@gmail.com'], // Primary salon email
       subject: `${subjectTitle} from ${name}`,
       replyTo: email,
       html: htmlContent,
