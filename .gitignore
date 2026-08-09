@@ -17,6 +17,12 @@
 /.next/
 /out/
 
+# generated responsive image variants (rebuilt by `npm run build`)
+/public/_img/
+
+# contact.php with a real Resend key pasted in — never commit that
+/deploy/contact.local.php
+
 # production
 /build
 

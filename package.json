@@ -5,19 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "npx serve out",
+    "lint": "eslint",
+    "prebuild": "node scripts/generate-image-variants.mjs",
+    "postbuild": "cp deploy/.htaccess deploy/contact.php out/"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.3",
     "framer-motion": "^12.35.2",
-    "gsap": "^3.14.2",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "resend": "^6.9.3",
-    "swiper": "^12.1.2"
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

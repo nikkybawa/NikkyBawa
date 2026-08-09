@@ -11,7 +11,7 @@ export default function PortfolioHero() {
                 <div className="absolute inset-0 grid grid-cols-3 opacity-40">
                     <div className="relative">
                         <Image
-                            src="/portfolio/Bridal Make up-7.webp"
+                            src="/portfolio/Bridal Make up-7.avif"
                             alt=""
                             fill
                             className="object-cover blur-sm scale-110"
@@ -22,7 +22,7 @@ export default function PortfolioHero() {
                     </div>
                     <div className="relative">
                         <Image
-                            src="/portfolio/Bridal Make up-25.webp"
+                            src="/portfolio/Bridal Make up-25.avif"
                             alt=""
                             fill
                             className="object-cover blur-sm scale-110"
@@ -33,7 +33,7 @@ export default function PortfolioHero() {
                     </div>
                     <div className="relative">
                         <Image
-                            src="/portfolio/Bridal Make up-40.webp"
+                            src="/portfolio/Bridal Make up-40.avif"
                             alt=""
                             fill
                             className="object-cover blur-sm scale-110"

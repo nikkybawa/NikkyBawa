@@ -1,0 +1,91 @@
+# Nikky Bawa Ladies Salon — static export on Hostinger (Apache)
+# Upload to public_html/.htaccess
+
+# ── Force HTTPS and a single canonical host ──────────────────────────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Serve www and non-www from one canonical hostname (drop www).
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # The export uses trailingSlash, so /about is a directory holding index.html.
+  # Redirect the slashless form once rather than letting Apache guess.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+# ── 404 ──────────────────────────────────────────────────────────────────────
+ErrorDocument 404 /404.html
+
+DirectoryIndex index.html
+Options -Indexes
+
+# ── Compression ──────────────────────────────────────────────────────────────
+# Text assets only. AVIF/MP4 are already compressed; re-compressing wastes CPU.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE text/javascript application/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml
+  AddOutputFilterByType BROTLI_COMPRESS text/javascript application/javascript
+  AddOutputFilterByType BROTLI_COMPRESS application/json application/xml
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# ── Correct MIME types ───────────────────────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType image/avif                       .avif
+  AddType video/mp4                        .mp4
+  AddType application/javascript           .js
+  AddType application/manifest+json        .webmanifest
+</IfModule>
+
+# ── Caching ──────────────────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Content-hashed build output and media: never changes under the same name.
+  ExpiresByType image/avif                 "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+  ExpiresByType video/mp4                  "access plus 1 year"
+  ExpiresByType text/css                   "access plus 1 year"
+  ExpiresByType application/javascript     "access plus 1 year"
+
+  # HTML must revalidate so redeploys are picked up immediately.
+  ExpiresByType text/html                  "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(avif|svg|mp4|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Next emits content-hashed filenames under /_next/static.
+  <FilesMatch "^.*\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Baseline security headers.
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# ── Keep the PHP endpoint's config out of reach ──────────────────────────────
+<FilesMatch "\.(env|log|json~|bak)$">
+  Require all denied
+</FilesMatch>

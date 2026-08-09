@@ -111,7 +111,7 @@ export default function Journey() {
                 >
                     <div className="rounded-3xl overflow-hidden shadow-xl relative aspect-[16/10]">
                         <Image
-                            src="/images/academy.png"
+                            src="/images/academy.avif"
                             alt="Nikky Bawa Beauty Academy"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"

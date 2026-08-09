@@ -9,21 +9,21 @@ const premiumServices = [
   {
     title: "Luxury Bridal Makeup",
     description: "Flawless, radiant bridal looks utilizing premium international brands for your special day.",
-    image: "/images/bridal-makeup.png",
+    image: "/images/bridal-makeup.avif",
     link: "/makeup",
     tag: "Most Popular"
   },
   {
     title: "Advanced Hair Styling",
     description: "Transform your look with precision cuts, vibrant global coloring, and expert styling.",
-    image: "/images/hair-styling.png",
+    image: "/images/hair-styling.avif",
     link: "/hair-color-style",
     tag: "Signature"
   },
   {
     title: "Rejuvenating Facials",
     description: "Deep cleansing and premium skincare treatments designed to restore your natural, youthful glow.",
-    image: "/images/skin-care.png",
+    image: "/images/skin-care.avif",
     link: "/facial",
     tag: "Relaxing"
   }
@@ -64,7 +64,7 @@ export default function BestServices() {
             </p>
           </div>
           
-          <Link href="/services" className="inline-flex items-center gap-2 font-semibold text-rose-gold hover:text-charcoal transition-colors group shrink-0">
+          <Link href="/#services" className="inline-flex items-center gap-2 font-semibold text-rose-gold hover:text-charcoal transition-colors group shrink-0">
             View All Services
             <span className="bg-rose-gold/10 p-2 rounded-full group-hover:bg-charcoal group-hover:text-white transition-colors">
               <ArrowRight size={18} />

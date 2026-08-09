@@ -2,7 +2,7 @@
   "makeup": {
     "title": "Professional & Bridal Makeup",
     "description": "Flawless, radiant bridal and party looks tailored to your personality. Walk down the aisle or attend any event with absolute confidence and grace.",
-    "image": "/images/bridal-makeup.png",
+    "image": "/images/bridal-makeup.avif",
     "features": [
       "Bridal HD & Airbrush Makeup",
       "Engagement & Reception Makeup",
@@ -15,39 +15,39 @@
       {
         "title": "Bridal Makeup",
         "description": "Along with the shining jeweler and gorgeous wedding dress the makeup.",
-        "image": "/portfolio/Bridal Make up-47.webp"
+        "image": "/portfolio/Bridal Make up-47.avif"
       },
       {
         "title": "Party makeup",
         "description": "Everyone wants to look good, especially when it is the time to party.",
-        "image": "/portfolio/Bridal Make up-13.webp"
+        "image": "/portfolio/Bridal Make up-13.avif"
       },
       {
         "title": "Day makeup",
         "description": "The purpose of daytime makeup is often to highlight natural features and conceal flaws and blemishes.",
-        "image": "/portfolio/Bridal Make up.pptxs-32.webp"
+        "image": "/portfolio/Bridal Make up.pptxs-32.avif"
       },
       {
         "title": "Evening makeup",
         "description": "This can be more dramatic, especially if you are attending a party or function where the lights will be dim.",
-        "image": "/portfolio/Bridal Make up-16.webp"
+        "image": "/portfolio/Bridal Make up-16.avif"
       },
       {
         "title": "Night Makeup",
         "description": "When doing your makeup for an evening look, most makeup artists recommend that you choose either your lips or your eyes as the focus.",
-        "image": "/portfolio/Bridal Make up-19.webp"
+        "image": "/portfolio/Bridal Make up-19.avif"
       },
       {
         "title": "Skin Treatment",
         "description": "Healthy skin, healthy soul, let your inner radiance take control.",
-        "image": "/portfolio/Bridal Make up-20.webp"
+        "image": "/portfolio/Bridal Make up-20.avif"
       }
     ]
   },
   "hair-color-style": {
     "title": "Hair Coloring & Styling",
     "description": "Express your unique personality with our vibrant, professional hair coloring and styling services. Whether you want a subtle change or a bold transformation, our experts deliver stunning results.",
-    "image": "/images/hair-styling.png",
+    "image": "/images/hair-styling.avif",
     "features": [
       "Global Hair Color",
       "Balayage & Ombre",
@@ -60,7 +60,7 @@
   "hair-straightening-keratin": {
     "title": "Hair Straightening & Keratin",
     "description": "Transform frizzy, unmanageable hair into smooth, silky, and straight locks holding natural shine. Our treatments strengthen hair from within.",
-    "image": "/images/hair-treatment.png",
+    "image": "/images/hair-treatment.avif",
     "features": [
       "Keratin Treatment",
       "Hair Botox",
@@ -73,7 +73,7 @@
   "hair-cuts": {
     "title": "Precision Hair Cuts",
     "description": "From timeless elegance to modern trends, our expert stylists consult and craft the perfect haircut that frames your face and matches your lifestyle.",
-    "image": "/images/hair-styling.png",
+    "image": "/images/hair-styling.avif",
     "features": [
       "Classic & Advanced Haircuts",
       "Layers, Bobs, & Pixie Cuts",
@@ -85,7 +85,7 @@
   "hair-extension": {
     "title": "Premium Hair Extensions",
     "description": "Instantly add volume and length to your hair with our natural-looking, high-quality hair extensions fitted seamlessly by our specialists.",
-    "image": "/images/hair-styling.png",
+    "image": "/images/hair-styling.avif",
     "features": [
       "Clip-in Extensions",
       "Tape-in Extensions",
@@ -97,7 +97,7 @@
   "facial": {
     "title": "Rejuvenating Facials",
     "description": "Advanced skincare treatments designed to deeply cleanse, exfoliate, and nourish your skin. Restore your natural, youthful glow.",
-    "image": "/images/skin-care.png",
+    "image": "/images/skin-care.avif",
     "features": [
       "Hydra-Facial",
       "Anti-Aging & Firming Facial",
@@ -110,7 +110,7 @@
   "nails": {
     "title": "Nail Art & Care",
     "description": "Pamper your hands and feet with our luxurious manicure, pedicure, and stunning nail art services. Make every detail count.",
-    "image": "/service-images/nail-extension.webp",
+    "image": "/service-images/nail-extension.avif",
     "features": [
       "Gel & Acrylic Extensions",
       "Custom 3D & Minimalist Nail Art",
@@ -123,7 +123,7 @@
   "hair-removal": {
     "title": "Painless Hair Removal",
     "description": "Experience smooth, flawless skin with our hygienic and gentle hair removal services, including waxing and threading.",
-    "image": "/images/skin-care.png",
+    "image": "/images/skin-care.avif",
     "features": [
       "Full Body Waxing (Rica/Chocolate)",
       "Bikini Waxing",
@@ -135,7 +135,7 @@
   "skin-whitening": {
     "title": "Skin Brightening & Whitening",
     "description": "Safe, dermatologist-approved treatments to even out your skin tone, reduce tan, and bring forward a luminous, radiant complexion.",
-    "image": "/images/skin-care.png",
+    "image": "/images/skin-care.avif",
     "features": [
       "De-Tan Treatments",
       "Skin Polishing & Microdermabrasion",

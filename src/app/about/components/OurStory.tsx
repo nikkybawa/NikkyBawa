@@ -22,7 +22,7 @@ export default function OurStory() {
                     >
                         <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
                             <Image
-                                src="/images/founder.png"
+                                src="/images/founder.avif"
                                 alt="Mrs. Nikky Bawa – Founder"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"

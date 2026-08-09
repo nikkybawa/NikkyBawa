@@ -32,7 +32,9 @@ export default function ContactForm() {
         data.inquiryType = inquiryType;
 
         try {
-            const res = await fetch("/api/contact", {
+            // Static export has no Node runtime; contact.php sits next to the
+            // exported files in public_html and calls Resend server-side.
+            const res = await fetch("/contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -105,6 +107,16 @@ export default function ContactForm() {
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Honeypot: hidden from people, filled in by bots. */}
+                        <input
+                            type="text"
+                            name="company"
+                            tabIndex={-1}
+                            autoComplete="off"
+                            aria-hidden="true"
+                            className="absolute left-[-9999px] w-px h-px opacity-0"
+                        />
+
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Personal Details */}
                             <div className="space-y-6">

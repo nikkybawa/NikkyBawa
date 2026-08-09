@@ -52,11 +52,12 @@ export default function AwardVideoSection() {
                     >
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            preload="metadata"
+                            preload="none"
+                            poster="/videos/award-kareena-poster.avif"
                             playsInline
                             controls
                         >
-                            <source src="/videos/kareena-kappor-nikkibawa-award.mp4#t=0.001" type="video/mp4" />
+                            <source src="/videos/kareena-kappor-nikkibawa-award.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 pointer-events-none">
@@ -76,11 +77,12 @@ export default function AwardVideoSection() {
                     >
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            preload="metadata"
+                            preload="none"
+                            poster="/videos/award-ceremony-poster.avif"
                             playsInline
                             controls
                         >
-                            <source src="/videos/ award.mp4#t=0.001" type="video/mp4" />
+                            <source src="/videos/award.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 pointer-events-none">

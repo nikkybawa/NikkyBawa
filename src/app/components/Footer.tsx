@@ -117,7 +117,7 @@ export default function Footer() {
                     <div className="inline-flex items-center gap-3 mb-4">
                         <Sparkles size={16} className="text-gold" />
                         <Image
-                            src="/logo.png"
+                            src="/logo.avif"
                             alt="Nikky Bawa Ladies Salon"
                             width={200}
                             height={60}

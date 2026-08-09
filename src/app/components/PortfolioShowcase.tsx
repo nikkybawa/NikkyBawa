@@ -6,14 +6,14 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 /* ─── Showcase images ─── */
 const showcaseImages = [
-    { src: "/portfolio/Bridal Make up-10.webp", alt: "Bridal makeup look – elegant traditional" },
-    { src: "/portfolio/Bridal Make up-13.webp", alt: "Bridal makeup look – royal bridal" },
-    { src: "/portfolio/Bridal Make up-15.webp", alt: "Bridal makeup look – classic beauty" },
-    { src: "/portfolio/Bridal Make up-16.webp", alt: "Bridal makeup look – glamorous" },
-    { src: "/portfolio/Bridal Make up-19.webp", alt: "Bridal makeup look – stunning bride" },
-    { src: "/portfolio/Bridal Make up-20.webp", alt: "Bridal makeup look – contemporary style" },
-    { src: "/portfolio/Bridal Make up-25.webp", alt: "Bridal makeup look – luxurious" },
-    { src: "/portfolio/Bridal Make up-26.webp", alt: "Bridal makeup look – timeless elegance" },
+    { src: "/portfolio/Bridal Make up-10.avif", alt: "Bridal makeup look – elegant traditional" },
+    { src: "/portfolio/Bridal Make up-13.avif", alt: "Bridal makeup look – royal bridal" },
+    { src: "/portfolio/Bridal Make up-15.avif", alt: "Bridal makeup look – classic beauty" },
+    { src: "/portfolio/Bridal Make up-16.avif", alt: "Bridal makeup look – glamorous" },
+    { src: "/portfolio/Bridal Make up-19.avif", alt: "Bridal makeup look – stunning bride" },
+    { src: "/portfolio/Bridal Make up-20.avif", alt: "Bridal makeup look – contemporary style" },
+    { src: "/portfolio/Bridal Make up-25.avif", alt: "Bridal makeup look – luxurious" },
+    { src: "/portfolio/Bridal Make up-26.avif", alt: "Bridal makeup look – timeless elegance" },
 ];
 
 /* ─── Single Parallax Image Card ─── */
@@ -209,11 +209,12 @@ export default function PortfolioShowcase() {
                     >
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            preload="metadata"
+                            preload="none"
+                            poster="/videos/award-kareena-poster.avif"
                             playsInline
                             controls
                         >
-                            <source src="/videos/kareena-kappor-nikkibawa-award.mp4#t=0.001" type="video/mp4" />
+                            <source src="/videos/kareena-kappor-nikkibawa-award.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-10 pointer-events-none">
@@ -234,11 +235,12 @@ export default function PortfolioShowcase() {
                     >
                         <video
                             className="absolute inset-0 w-full h-full object-cover"
-                            preload="metadata"
+                            preload="none"
+                            poster="/videos/award-ceremony-poster.avif"
                             playsInline
                             controls
                         >
-                            <source src="/videos/ award.mp4#t=0.001" type="video/mp4" />
+                            <source src="/videos/award.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-10 pointer-events-none">

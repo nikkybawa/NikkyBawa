@@ -9,11 +9,13 @@ export default function AboutHero() {
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/about-hero.png"
+                    src="/images/about-hero.avif"
                     alt="Nikky Bawa Salon Interior"
                     fill
                     className="object-cover"
                     priority
+                    sizes="100vw"
+                    quality={60}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/50 to-charcoal/80" />
             </div>

@@ -73,18 +73,18 @@ export default function Welcome() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
                                 <div className="rounded-3xl overflow-hidden shadow-xl aspect-[3/4] relative">
-                                    <Image src="/images/bridal-makeup.png" alt="Bridal makeup at Nikky Bawa" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
+                                    <Image src="/images/bridal-makeup.avif" alt="Bridal makeup at Nikky Bawa" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
                                 </div>
                                 <div className="rounded-3xl overflow-hidden shadow-lg aspect-square relative">
-                                    <Image src="/images/nail-art.png" alt="Nail art services" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
+                                    <Image src="/images/nail-art.avif" alt="Nail art services" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
                                 </div>
                             </div>
                             <div className="space-y-4 pt-8">
                                 <div className="rounded-3xl overflow-hidden shadow-lg aspect-square relative">
-                                    <Image src="/images/hair-styling.png" alt="Hair styling services" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
+                                    <Image src="/images/hair-styling.avif" alt="Hair styling services" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
                                 </div>
                                 <div className="rounded-3xl overflow-hidden shadow-xl aspect-[3/4] relative">
-                                    <Image src="/images/skin-care.png" alt="Skin care treatments" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
+                                    <Image src="/images/skin-care.avif" alt="Skin care treatments" fill sizes="(max-width: 1024px) 45vw, 22vw" className="object-cover hover:scale-110 transition-transform duration-700" loading="lazy" />
                                 </div>
                             </div>
                         </div>

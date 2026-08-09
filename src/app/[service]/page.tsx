@@ -171,7 +171,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
         {data.promotion && (
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
             <div className="bg-gradient-to-r from-rose-gold to-gold rounded-[2.5rem] p-10 sm:p-16 text-center text-white shadow-2xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-[url('/images/salon-hero.png')] opacity-10 mix-blend-overlay bg-cover bg-center group-hover:scale-105 transition-transform duration-1000" />
+              <div className="absolute inset-0 bg-[url('/images/salon-hero.avif')] opacity-10 mix-blend-overlay bg-cover bg-center group-hover:scale-105 transition-transform duration-1000" />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent" />
               <div className="relative z-10">
                 <h2 className="text-3xl sm:text-5xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>{data.promotion.title}</h2>

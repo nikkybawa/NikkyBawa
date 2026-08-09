@@ -8,37 +8,37 @@ const services = [
     {
         title: "Bridal Makeup",
         desc: "Flawless, radiant bridal looks tailored to your personality. Walk down the aisle with confidence and grace.",
-        img: "/images/bridal-makeup.png",
+        img: "/images/bridal-makeup.avif",
         href: "/makeup/",
     },
     {
         title: "Hair Styling",
         desc: "Timeless elegance or modern trends — our expert stylists create the perfect look for every occasion.",
-        img: "/images/hair-styling.png",
+        img: "/images/hair-styling.avif",
         href: "/hair-cuts/",
     },
     {
         title: "Skin & Beauty",
         desc: "Advanced skincare treatments to nourish, rejuvenate, and enhance your skin's natural radiance.",
-        img: "/images/skin-care.png",
+        img: "/images/skin-care.avif",
         href: "/facial/",
     },
     {
         title: "Hair Treatments",
         desc: "Specialized treatments to repair, restore strength, and improve your hair texture and health.",
-        img: "/images/hair-treatment.png",
+        img: "/images/hair-treatment.avif",
         href: "/hair-straightening-keratin/",
     },
     {
         title: "Nail Art",
         desc: "Beautiful, elegant nails with premium nail art, manicure, and pedicure services.",
-        img: "/images/nail-art.png",
+        img: "/images/nail-art.avif",
         href: "/nails/",
     },
     {
         title: "Hair Color",
         desc: "Vibrant, professional hair coloring and highlighting services to express your unique style.",
-        img: "/images/hair-styling.png",
+        img: "/images/hair-styling.avif",
         href: "/hair-color-style/",
     },
 ];

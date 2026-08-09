@@ -69,7 +69,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <a href="/#home" className="flex items-center">
                     <Image
-                        src="/logo.png"
+                        src="/logo.avif"
                         alt="Nikky Bawa Ladies Salon"
                         width={160}
                         height={48}

@@ -279,17 +279,6 @@ h6 {
   border: none;
 }
 
-/* ── Swiper Custom Styles ── */
-.swiper-pagination-bullet {
-  background: #B76E79 !important;
-  opacity: 0.4 !important;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  background: linear-gradient(135deg, #B76E79, #C9A96E) !important;
-}
-
 /* ── Hamburger Menu Animation ── */
 .hamburger-line {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

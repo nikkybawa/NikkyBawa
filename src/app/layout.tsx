@@ -4,7 +4,10 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import GoogleTagManagerNoscript from "./components/GoogleTagManagerNoscript";
 import "./globals.css";
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID!;
+// Hardcoded on purpose: GTM container IDs are public (they ship in the page
+// source), and .env files are gitignored, so a build from a fresh clone would
+// silently drop analytics if this came from the environment.
+const GTM_ID = "GTM-WWWF6M3";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -60,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
+      <GoogleTagManager gtmId={GTM_ID} />
       <head>
         <script
           type="application/ld+json"
@@ -69,7 +72,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "BeautySalon",
               name: "Nikky Bawa Ladies Salon",
-              image: "/images/salon-hero.png",
+              image: "/images/salon-hero.avif",
               telephone: ["+919981415156", "+919111188852", "+918827450007"],
               email: "rajanbawabetwa@gmail.com",
               address: {
@@ -93,7 +96,7 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} antialiased`}
         style={{ fontFamily: "'Inter', sans-serif" }}
       >
-        {GTM_ID && <GoogleTagManagerNoscript gtmId={GTM_ID} />}
+        <GoogleTagManagerNoscript gtmId={GTM_ID} />
         {children}
       </body>
     </html>
